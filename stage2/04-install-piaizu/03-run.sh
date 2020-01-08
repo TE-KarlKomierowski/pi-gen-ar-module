@@ -29,7 +29,7 @@ cp -v files/.bashrc ${ROOTFS_DIR}/home/pi/.bashrc
 ############ Create copy of this buildsystem on target fs#################
 buildsystem_path=piaizu_$GITREV
 pth=$(readlink -e ../..)
-if [ ! -d "${ROOTFS_DIR}/home/pi/$buildsystem_path" ]; then
-	git clone file://$pth --depth=1 ${ROOTFS_DIR}/home/pi/$buildsystem_path
-fi
+#if [ ! -d "${ROOTFS_DIR}/home/pi/$buildsystem_path" ]; then
+#	git clone file://$pth --depth=1 ${ROOTFS_DIR}/home/pi/$buildsystem_path
+#fi
 
