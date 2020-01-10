@@ -1389,8 +1389,38 @@
                startup_state = "inactive";
                function = "input";
             }; // pin
-            pin@p14 { function = "uart0";  termination = "no_pulling"; drive_strength_mA = < 8 >; }; // TX uart0
-            pin@p15 { function = "uart0";  termination = "pull_up";    drive_strength_mA = < 8 >; }; // RX uart0
+            pin@p0  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //CLK
+            pin@p1  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //DEN
+            pin@p2  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //VSYN
+            pin@p3  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //HSYN
+//            pin@p4  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL0
+//            pin@p5  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL1
+//            pin@p6  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL2
+//            pin@p7  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL3
+//            pin@p8  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL4
+//            pin@p9  { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL5
+//            pin@p10 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL6
+//            pin@p11 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //BL7
+            pin@p12 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR0
+            pin@p13 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR1
+            pin@p14 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR2
+            pin@p15 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR3
+            pin@p16 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR4
+            pin@p17 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR5
+            pin@p18 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR6
+            pin@p19 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //GR7
+//            pin@p20 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD0
+//            pin@p21 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD1
+//            pin@p22 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD2
+//            pin@p23 { function = "input";  termination = "pull_up";   drive_strength_mA = < 0 >;  }; //RD3
+//            pin@p24 { function = "input";  termination = "pull_up";   drive_strength_mA = < 0 >;  }; //RD4
+//            pin@p25 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD5
+//            pin@p26 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD6
+//            pin@p27 { function = "dpi";  termination = "no_pulling";   drive_strength_mA = < 0 >;  }; //RD7
+
+
+//	    pin@p14 { function = "uart0";  termination = "no_pulling"; drive_strength_mA = < 8 >; }; // TX uart0
+//            pin@p15 { function = "uart0";  termination = "pull_up";    drive_strength_mA = < 8 >; }; // RX uart0
             pin@p28 { function = "input";  termination = "no_pulling"; polarity = "active_low"; }; // Hotplug
             pin@p29 { function = "output"; termination = "no_pulling"; }; // ACT_LED (GREEN)
             pin@p34 { function = "input";  termination = "pull_up";    drive_strength_mA = < 8 >; };
